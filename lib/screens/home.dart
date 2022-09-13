@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/top_bar/top_bar.dart';
+import 'package:portfolio/screens/left_screen/left_content.dart';
+import 'package:portfolio/screens/right_screen/right_content.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -27,10 +29,7 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   width: width * 0.49,
                   height: height * 0.89,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text('Esquerda'),
-                  ),
+                  child: LeftContent(),
                 ),
                 Container(
                   width: width * 0.002,
@@ -40,10 +39,7 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   width: width * 0.49,
                   height: height * 0.89,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text('Direita'),
-                  ),
+                  child: RightContent(),
                 ),
               ],
             ),

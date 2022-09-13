@@ -11,7 +11,7 @@ class TopBar extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      color: Colors.grey,
+      color: Colors.black54,
     );
   }
 }

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
   static const ColorScheme _colors = ColorScheme(
     brightness: Brightness.dark,
-    background: Colors.black87,
+    background: Colors.blueGrey,
     onBackground: Colors.black87,
     primary: Colors.deepOrangeAccent,
     onPrimary: Colors.deepOrange,
