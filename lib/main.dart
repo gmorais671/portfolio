@@ -1,8 +1,6 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/core/router.dart';
-import 'package:portfolio/firebase_options.dart';
 import 'package:portfolio/pages/contact/contact_page.dart';
 import 'package:portfolio/pages/screening/screening_page.dart';
 import 'package:portfolio/pages/projects/projects_page.dart';
@@ -10,9 +8,6 @@ import 'package:portfolio/pages/resume/resume_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
 
   runApp(const MyApp());
 }
@@ -63,9 +58,19 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      body: Center(
-        child: pages[currentPageIndex],
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+            horizontal: (width > 1250)
+                ? (width * .2)
+                : (width > 700)
+                    ? (width * .07)
+                    : 0.0),
+        child: Center(
+          child: pages[currentPageIndex],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentPageIndex,

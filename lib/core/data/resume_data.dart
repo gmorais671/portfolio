@@ -9,7 +9,7 @@ List<ResumeExperience> professionalExperiences = [
     company: 'Sinapse Informática',
     contractType: 'Contract',
     resumeDescription:
-        '''Flutter Developer responsible for building the Olá Cliente app from scratch, delivering the company's complete mobile product. Worked on API integrations, geolocation, payments, and ongoing support.''',
+        '''Flutter Developer responsible for building the Olá Cliente app from scratch, delivering the company's first flutter cross-platform product. Worked on API integrations, geolocation, payments, and ongoing support.''',
     detailedDescription: '''
       At Sinapse Informática, I took the lead in transforming an idea into reality. As the main Flutter Developer, I built the Olá Cliente mobile app entirely from the ground up — turning what was once a product in the planning phase into a fully functional, high-impact application.
       I delivered complex features such as real-time geolocation, REST API integrations, online payments, and customer support tools. This project became a milestone for the company, marking its first complete mobile solution and expanding the scope of its digital ecosystem. Beyond Flutter, I also supported Android (Kotlin) apps and backend APIs in ASP.NET, contributing across the full stack with ownership and adaptability.
@@ -20,7 +20,6 @@ List<ResumeExperience> professionalExperiences = [
       'Took the lead in developing the Olá Cliente mobile app, building it from scratch using Flutter and transforming it from a conceptual product into a functional solution.',
       '''Delivered the app's core features by replicating and adapting functions from existing systems, making it a central part of the company's product offering.''',
       'Worked directly with the Product Owner to validate features, prioritize tasks, and ensure that development aligned with business needs and user expectations.',
-      '''Delivered the app's core features by replicating and adapting functions from existing systems, making it a central part of the company's product offering.''',
       '''My work brought tangible value to the company by launching its first complete Flutter-based application and helping shape the future of its mobile strategy.''',
       '''Also provide ongoing support for the Flutter app and another Android app built in Kotlin, as well as contributing to backend APIs developed in ASP.NET.''',
     ],
@@ -68,7 +67,7 @@ List<ResumeExperience> professionalExperiences = [
     companyIntroduction:
         'Mutant is a digital powerhouse based in São Paulo, operating across 15 countries with over 400 clients and 3,200 professionals. As a "performance company," it builds customized end-to-end digital solutions to enhance customer experience, sales, credit recovery, and omnichannel engagement.',
     bulletPoints: [
-      'Contributed to the client acquisition web platform for Mutant Whats, working on database integration, interface redesign, and online payment features.',
+      'Contributed to the client acquisition landing pages and web platform for Mutant Whats, working on database integration, interface redesign, and realtime chat features.',
       '''Helped develop and maintain the Mutant Whats mobile app (React Native), handling UI adjustments, profile management, and real-time data integrations.''',
       'Performed QA testing on both web and mobile platforms, reproducing error scenarios and ensuring high-quality delivery with fewer bugs.',
       '''Collaborated in teams of 3-4 developers using pair programming and worked closely with the PO for task planning and prioritization.''',
@@ -106,7 +105,7 @@ List<ResumeExperience> professionalExperiences = [
     company: 'MOVA | Credit as a Service',
     contractType: 'Contract',
     resumeDescription:
-        '''Worked on the internal web platform for MOVA's system admins using Vue.js. Delivered new features, screens, and client management tools that were deployed to production and used daily by the business team.''',
+        '''Worked on the web platform for MOVA's system admins using Vue.js. Delivered new features, screens, and client management tools that were deployed to production and used daily by the business team.''',
     detailedDescription: '''
       At MOVA, I joined a large distributed team to help build and maintain the internal web platform used by system administrators to manage client credit operations. Using Vue.js, HTML, CSS, and JavaScript, I developed new screens, integrated essential features like client and payment management, and delivered components that were deployed to production.
       This experience gave me my first real exposure to the professional development workflow — including code collaboration, production deployment, and agile teamwork — and helped me understand the value of consistency, usability, and delivery in a real-world product.
@@ -136,38 +135,6 @@ List<ResumeExperience> professionalExperiences = [
       'Team Communication',
     ],
     imagePath: 'assets/images/logo_mova.png',
-  ),
-  ResumeExperience(
-    id: 3,
-    position: 'Flutter Developer | Freelance',
-    period: 'Sep/2021 - May/2022',
-    location: 'Inventory Control App',
-    company: 'VM Tabacos',
-    contractType: 'Freelance',
-    resumeDescription:
-        '''Developed a custom Flutter app for VM Tabacos, a wholesale distributor, to manage sales, purchases, and cash flow. Delivered dashboards and reports that supported operations for over 2 years.''',
-    detailedDescription: '''
-      As a freelance developer, I created a custom Flutter application for VM Tabacos, a wholesale distributor of tobacco-related products. The app was designed to streamline their business operations — allowing the client to manage inventory, track purchases and sales, control cash flow, and generate detailed reports through a user-friendly mobile interface.
-      Built in Flutter and integrated with Firebase Functions (backend by a partner), the solution remained in active use for over two years, helping the client maintain operational control and make informed decisions based on real-time data. It was a full-cycle delivery experience, from design to deployment, that brought lasting value to a small business.
-      ''',
-    companyIntroduction: '',
-    imagePath: '',
-    bulletPoints: [
-      "Developed a custom Flutter app to manage sales, purchases, and cash flow for VM Tabacos, a wholesale distributor of smoking accessories.",
-      "Built dashboards and reporting tools for inventory and transactions, helping the client gain real-time operational control.",
-      "Worked in collaboration with a backend developer using Firebase Functions, delivering an integrated solution used actively for over two years.",
-      "Delivered the project independently from design to deployment, improving the client's business visibility and decision-making.",
-    ],
-    habilities: [
-      'Flutter',
-      'Dart',
-      'Firebase Functions',
-      'Firestore',
-      'RESTful APIs',
-      'UI Design',
-      'State Management',
-      'Git',
-    ],
   ),
   ResumeExperience(
     id: 4,

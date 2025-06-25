@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/data/constant_strings.dart';
+import 'package:portfolio/core/data/contact_redirections.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -8,7 +9,7 @@ class ContactPage extends StatelessWidget {
 
   Future<void> _launchUrl(String url) async {
     Uri uri = Uri.parse(url);
-    if (!await launchUrl(uri)) {
+    if (!await launchUrl(uri, mode: LaunchMode.platformDefault)) {
       throw Exception('Could not launch $uri');
     }
   }
@@ -47,37 +48,23 @@ class ContactPage extends StatelessWidget {
               style: headerName,
             ),
             const SizedBox(
-              height: 25,
-            ),
-            ElevatedButton.icon(
-              icon: const Icon(FontAwesomeIcons.github),
-              label: const Text('My portfolio on GitHub'),
-              onPressed: () => _launchUrl('https://github.com/gmorais671'),
-            ),
-            const SizedBox(
               height: 10,
             ),
-            ElevatedButton.icon(
-              icon: const Icon(FontAwesomeIcons.linkedinIn),
-              label: const Text('My LinkedIn profile'),
-              onPressed: () => _launchUrl(
-                  'https://www.linkedin.com/in/gabriel-morais-marcondes/'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton.icon(
-              icon: const Icon(FontAwesomeIcons.whatsapp),
-              label: const Text('Chat on Whatsapp'),
-              onPressed: () => _launchUrl('https://wa.me/5519991261738'),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            ElevatedButton.icon(
-              icon: const Icon(Icons.email),
-              label: const Text('Send me an Email'),
-              onPressed: () => _launchUrl('mailto:gmorais671@gmail.com'),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: redirections.length,
+              itemBuilder: (context, index) {
+                final redirection = redirections[index];
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: ElevatedButton.icon(
+                    icon: Icon(redirection.iconData),
+                    label: Text(redirection.title),
+                    onPressed: () => _launchUrl(redirection.route),
+                  ),
+                );
+              },
             ),
           ],
         ),

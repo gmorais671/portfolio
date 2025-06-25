@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/theme.dart';
 import 'package:portfolio/models/professional_experience.dart';
@@ -80,8 +81,9 @@ class DetailedExperience extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: Wrap(
                       spacing: 4.0, // Espaçamento horizontal entre os chips
-                      runSpacing:
-                          0.0, // Espaçamento vertical entre as linhas de chips
+                      runSpacing: kIsWeb
+                          ? 5.0
+                          : 0.0, // Espaçamento vertical entre as linhas de chips
                       alignment: WrapAlignment.center,
                       children: experience.habilities
                           .map((tech) => Chip(
