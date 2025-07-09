@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/data/constant_strings.dart';
 import 'package:portfolio/core/data/contact_redirections.dart';
@@ -17,7 +18,7 @@ class ContactPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      width: !kIsWeb ? double.infinity : null,
       padding: const EdgeInsets.all(24.0),
       child: SingleChildScrollView(
         child: Column(

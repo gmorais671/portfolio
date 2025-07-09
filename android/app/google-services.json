@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1880774439:android:f4dc865b453c883948fb02",
         "android_client_info": {
-          "package_name": "com.example.portfolio"
+          "package_name": "dev.gmorais671.portfolio"
         }
       },
       "oauth_client": [],

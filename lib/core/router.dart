@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portfolio/core/data/projects_data.dart';
 import 'package:portfolio/core/data/resume_data.dart';
-import 'package:portfolio/main.dart';
 import 'package:portfolio/models/professional_experience.dart';
 import 'package:portfolio/models/project.dart';
+import 'package:portfolio/pages/home/home_page.dart';
 import 'package:portfolio/pages/projects/detailed_project.dart';
 import 'package:portfolio/pages/resume/detailed_experience.dart';
 

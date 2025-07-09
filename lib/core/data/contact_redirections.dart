@@ -31,4 +31,19 @@ List<ContactRedirection> redirections = [
     linkWeb: false,
     iconData: Icons.email,
   ),
+  ContactRedirection(
+    id: 4,
+    title: 'Policy Privacy',
+    route: 'https://github.com/gmorais671/portfolio_privacy_policy',
+    linkWeb: true,
+    iconData: Icons.policy,
+  ),
+  ContactRedirection(
+    id: 5,
+    title: 'Download my resume',
+    route:
+        'https://drive.google.com/drive/folders/1rCQBTUKUdcjo_8ILfLcpO0osilDrLkHl?usp=sharing',
+    linkWeb: true,
+    iconData: Icons.download_done_rounded,
+  ),
 ];

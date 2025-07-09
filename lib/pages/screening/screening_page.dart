@@ -1,4 +1,3 @@
-import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/data/constant_strings.dart';
 import 'package:portfolio/core/theme.dart';
