@@ -75442,7 +75442,7 @@ $S:476}
 A.It.prototype={
 G(a){var s=A.aAq(B.R,B.io),r=A.a7(a).p3,q=A.fh(r.a),p=A.fh(r.b),o=A.fh(r.c),n=A.fh(r.d),m=A.fh(r.e),l=A.fh(r.f),k=A.fh(r.r),j=A.fh(r.w),i=A.fh(r.x)
 i=A.atY(null,s,A.adg(A.fh(r.y),A.fh(r.z),A.fh(r.Q),q,p,o,n,m,l,A.fh(r.as),A.fh(r.at),A.fh(r.ax),k,j,i),!0)
-return new A.qQ($.az7(),"Flutter Demo",i,!1,null)}}
+return new A.qQ($.az7(),"GMM | Dev Portfolio",i,!1,null)}}
 A.FG.prototype={
 k(a){var s=this
 return"ContactRedirection "+s.a+"(title: "+s.b+", route: "+s.c+", linkWeb: "+s.d+", iconData: "+s.e.k(0)+")"},
