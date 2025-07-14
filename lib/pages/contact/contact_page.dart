@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/core/data/constant_strings.dart';
 import 'package:portfolio/core/data/contact_redirections.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({Key? key}) : super(key: key);
@@ -23,27 +22,29 @@ class ContactPage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(40.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.25),
-                      blurRadius: 4,
-                      offset: const Offset(0, 2),
+            !kIsWeb
+                ? Padding(
+                    padding: const EdgeInsets.all(40.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.25),
+                            blurRadius: 4,
+                            offset: const Offset(0, 2),
+                          ),
+                        ],
+                      ),
+                      child: CircleAvatar(
+                        radius: 60,
+                        backgroundColor: Colors.grey[300],
+                        backgroundImage: const AssetImage(
+                            'assets/images/20250621b_portfolio.jpg'),
+                      ),
                     ),
-                  ],
-                ),
-                child: CircleAvatar(
-                  radius: 60,
-                  backgroundColor: Colors.grey[300],
-                  backgroundImage:
-                      const AssetImage('assets/images/20250621b_portfolio.jpg'),
-                ),
-              ),
-            ),
+                  )
+                : Container(),
             Text(
               ResumeTexts.contactTitle,
               style: headerName,

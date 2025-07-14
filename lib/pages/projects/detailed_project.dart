@@ -12,15 +12,28 @@ class DetailedProject extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+
+    const double breakpoint = 700;
+
+    final bool useDesktopLayout = width > breakpoint;
+
+    final double horizontalPadding = (width > 1250)
+        ? (width * .2)
+        : (width > 700)
+            ? (width * .07)
+            : 0.0;
+
     return Scaffold(
-      appBar: AppBar(),
+      appBar: useDesktopLayout ? null : AppBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Adicione seus widgets de experiência detalhada aqui
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.symmetric(
+                  vertical: 16.0, horizontal: horizontalPadding),
               child: ExperienceTitleCard(
                 companyName: project.company,
                 imagePath: project.imagePath,
